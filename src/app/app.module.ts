@@ -1,3 +1,4 @@
+import { ShoppingListService } from './header/shopping-list/shopping-list.service';
 import { DropdownDirective } from './header/shared/dropdown.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -26,7 +27,7 @@ import { RecipeItemComponent } from './header/recipe-book/recipe-list/recipe-ite
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
